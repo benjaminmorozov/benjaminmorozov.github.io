@@ -1,0 +1,72 @@
+@media(max-width: 720px) {
+    body {
+        background-color: blue;
+    }
+}
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.accordion-button::after {
+    content: none;
+}
+.accordion-item, .tabulka {
+    margin-left: 20px;
+}
+.tabulka {
+    width: 25%;
+}
+.link-banner {
+    margin: 20px;
+    width: 450px;
+    white-space: nowrap;
+}
+.alert {
+    display: inline-block
+}
+img {
+    object-fit:scale-down;
+    height: 250px;
+}
+.headingCarousel {
+    margin: 20px;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+.center-child {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.searchbox {
+    width: 82%;
+}
+.button {
+    width: 17%;
+}
+
+#test {
+    width: 30px;
+    height: 30px;
+    font-size: 250;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.rotating {
+    -webkit-animation: rotating 1.5s linear infinite;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
