@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'garnet';
+    src:
+        url('../fonts/garnet.ttf') format('truetype'), 
+        url('../fonts/garnet.woff2') format('woff2'),
+        url('../fonts/garnet.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #1c1e2c;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #242429;
+}
+.navbar-brand {
+    margin: 15px;
+    filter: brightness(0) invert(1);
+    width: 15%;
+}
+.logo {
+    width: 100%;
+}
+.nav-item {
+    font-family: 'garnet';
+    font-size: 25px;
+}
+.nav-item>a:link {
+    color: white !important;
+}
+.nav-item>a:visited {
+    color: white !important;
+}
+.nav-item>a:hover {
+    color: #ef233c !important;
+}

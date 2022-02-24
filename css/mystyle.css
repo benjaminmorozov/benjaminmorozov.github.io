@@ -70,3 +70,8 @@ img {
         -webkit-transform: rotate(360deg);
     }
 }
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
