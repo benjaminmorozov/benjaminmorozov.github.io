@@ -8,33 +8,88 @@
     font-style: normal;
     font-display: swap;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@700&display=swap');
 
 body {
-    background-color: #1c1e2c;
+    background-image: url('../images/upper.png') !important;
+    background-repeat: repeat-y;
+    background-position: 25% 25%;
 }
 
-.navbar {
+.red {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #ef233c;
+}
+.container {
+    position: absolute;
+    left: 5%;
+    margin-top: 5%;
+    background-color: transparent !important;
+}
+.shoe-desc {
+    position: absolute;
+    top: 0;
     width: 100%;
-    background-color: #242429;
+}
+.brand-img {
+    position: absolute;
+    left: 150px;
+    top: -50px;
+}
+.shoe-img {
+    position: absolute;
+    left: 400px;
+    top: -75px;
+}
+.navbar {
+    background-color: #FFFFFF;
+    width: 100%;
 }
 .navbar-brand {
     margin: 15px;
-    filter: brightness(0) invert(1);
     width: 15%;
+}
+.navbar-brand:hover {
+    filter: brightness(0%) invert(0);
 }
 .logo {
     width: 100%;
 }
 .nav-item {
     font-family: 'garnet';
+    font-weight: bold;
     font-size: 25px;
 }
+.shoe-code {
+    font-family: fot-rodin-pron,sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.shoe-title {
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 15px;
+}
+.shoe-price {
+    margin-top: 10%;
+    color: #ef233c;
+    font-family: 'Oswald', sans-serif;
+}
 .nav-item>a:link {
-    color: white !important;
+    color: #18181a !important;
 }
 .nav-item>a:visited {
-    color: white !important;
+    color: #18181a !important;
 }
 .nav-item>a:hover {
     color: #ef233c !important;
+}
+.toolbar {
+    margin-right: 15px;
+}
+.nav-link {
+    display: inline !important;
 }
