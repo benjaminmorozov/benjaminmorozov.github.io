@@ -55,18 +55,19 @@
             <ul class="navbar-nav toolbar">
                 <li class="nav-item text-center">
                     <!-- SHOPPING-CART -->
-                    <a class="nav-link" href="#cart">
-                    <i class="fa-solid fa-cart-shopping"> 0</i>
+                    <a class="nav-link" href="#cart" data-bs-toggle="offcanvas">
+                        <i class="fa-solid fa-cart-shopping"> 0</i>
                     </a>
                 </li>
                 <li class="nav-item text-center">
                     <!-- SEARCH -->
                     <a class="nav-link" href="#search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+        <!-- CAROUSEL -->
         <div class="red"></div>
         <div class="container contcard">
             <img class="brand-img" src="images/nike.png">
@@ -89,6 +90,59 @@
         </div>
         <div class="red-2"></div>
         <div class="red-3"></div>
+
+
+
+        <!-- CART -->
+        <div class="offcanvas offcanvas-end" id="cart">
+            <div class="offcanvas-header">
+                <h4 class="">Tvoj nákupný košík:</h4>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/airforce270.png" style="max-width: 100%">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">NIKE AIR VAPORMAX</h5>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/airforce270.png" style="max-width: 100%">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">NIKE AIR VAPORMAX</h5>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-center text-center align-text-bottom">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </body>
     <script src="https://kit.fontawesome.com/34a3fa1806.js" crossorigin="anonymous"></script>
     <script>
@@ -101,4 +155,5 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

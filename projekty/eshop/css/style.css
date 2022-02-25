@@ -77,7 +77,12 @@ body {
     left: 400px;
     top: -75px;
 }
-.btn-warning {
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited, .btn-warning:focus {
+    background-image: none;
+    box-shadow:none !important;
+    outline:0px !important;
+    background-color: #ef233c !important;
+    border-color:#ef233c !important;
     position: absolute;
     margin-left: 50px;
     bottom: 0;
@@ -111,6 +116,9 @@ body {
 .shoe-title {
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 15px;
+}
+.card-title {
+    font-family: 'Dela Gothic One', cursive;
 }
 .shoe-price {
     margin-top: 10%;
