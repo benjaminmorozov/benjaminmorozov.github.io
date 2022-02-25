@@ -10,6 +10,14 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@700&display=swap');
+@font-face {font-family: "MADE TOMMY";
+    src: url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/81f4fb121f1fc62cbbc85ca412c3d709.svg#MADE TOMMY") format("svg"); /* iOS 4.1- */
+}
 
 body {
     background-image: url('../images/upper.png') !important;
@@ -23,7 +31,22 @@ body {
     height: 25px;
     background-color: #ef233c;
 }
-.container {
+.red-2 {
+    position: absolute;
+    bottom: 5%;
+    width: 250px;
+    height: 10px;
+    background-color: #ef233c;
+}
+.red-3 {
+    position: absolute;
+    bottom: 6%;
+    left: 8%;
+    width: 250px;
+    height: 20px;
+    background-color: #ef233c;
+}
+.contcard {
     position: absolute;
     left: 5%;
     margin-top: 5%;
@@ -39,10 +62,27 @@ body {
     left: 150px;
     top: -50px;
 }
+.brand-full-img {
+    filter: brightness(0%) invert(0);
+}
+.buycard {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10%;
+}
+.buycard-col {
+    float: left;
+}
 .shoe-img {
     position: absolute;
     left: 400px;
     top: -75px;
+}
+.btn-warning {
+    position: absolute;
+    margin-left: 50px;
+    bottom: 0;
+    font-family: "MADE TOMMY";
 }
 .navbar {
     background-color: #FFFFFF;
