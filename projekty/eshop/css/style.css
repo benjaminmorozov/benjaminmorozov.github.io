@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
     font-family: 'garnet';
     src:
@@ -18,12 +19,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@700&display=swap');
 
+/* body */
 body {
     background-image: url('../images/upper.png') !important;
     background-repeat: repeat-y;
     background-position: 25% 25%;
+    width: 100%;
 }
 
+/* glitch */
 .red {
     position: absolute;
     width: 50px;
@@ -45,6 +49,8 @@ body {
     height: 20px;
     background-color: #ef233c;
 }
+
+
 .contcard {
     position: absolute;
     left: 5%;
@@ -56,7 +62,15 @@ body {
     top: 0;
     width: 100%;
 }
+.shoe-cart {
+    background-color: #ef233c;
+}
+.shoe-cart-img {
+    max-width: 90%;
+    margin: 5px;
+}
 .brand-img {
+    width: calc(100% - 150px);
     position: absolute;
     left: 150px;
     top: -50px;
@@ -73,12 +87,12 @@ body {
     float: left;
 }
 .shoe-img {
+    width: calc(100% - 450);
     position: absolute;
-    left: 400px;
+    left: 30%;
     top: -75px;
 }
 .btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited, .btn-warning:focus {
-    background-image: none;
     box-shadow:none !important;
     outline:0px !important;
     background-color: #ef233c !important;
@@ -107,6 +121,17 @@ body {
     font-weight: bold;
     font-size: 25px;
 }
+.cart-title {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: fot-rodin-pron,sans-serif;
+    margin-top: 10px;
+}
+.cart-remove {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+}
 .shoe-code {
     font-family: fot-rodin-pron,sans-serif;
     font-weight: 300;
@@ -114,6 +139,7 @@ body {
     letter-spacing: 3px;
 }
 .shoe-title {
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 15px;
 }
@@ -125,13 +151,20 @@ body {
     color: #ef233c;
     font-family: 'Oswald', sans-serif;
 }
-.nav-item>a:link {
-    color: #18181a !important;
+.cart-shoe-price {
+    color: #ef233c;
+    font-family: 'Oswald', sans-serif;
 }
-.nav-item>a:visited {
+.nav-item>a:link, .nav-item>a:visited {
     color: #18181a !important;
 }
 .nav-item>a:hover {
+    color: #ef233c !important;
+}
+.redlink:link, .redlink:visited {
+    color: #18181a !important;
+}
+.redlink:hover {
     color: #ef233c !important;
 }
 .toolbar {
@@ -139,4 +172,62 @@ body {
 }
 .nav-link {
     display: inline !important;
+}
+
+.selector {
+    margin-top: 2%;
+    position: absolute;
+    right: 0;
+}
+.card-suggest {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border: none !important;
+}
+.suggest-img {
+    margin: 5px;
+    max-width: 150px;
+    height: 126.86px;
+}
+.suggest-container {
+    width: 150px;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.suggest-border {
+    border: 1px solid rgba(0,0,0,.125);
+    border-left: none;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.flip {
+    transform: scaleX(-1);
+}
+.dot {
+    cursor: pointer;
+}
+.carousel-paginator {
+    position: absolute;
+    top: 10%;
+    right: 105%;
+}
+.carousel-paginator>span + span {
+    margin-top: 860%;
+    display: block;
+}
+.about {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 95%;
+}
+.btn-how, .btn-how:hover, .btn-how:active, .btn-how:focus, .btn-how:visited {
+    box-shadow:none !important;
+    outline:0px !important;
+    background-color: #ef233c !important;
+    border-color:#ef233c !important;
+    font-family: "MADE TOMMY";
+}
+.about-logo {
+    width: 100%;
 }

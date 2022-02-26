@@ -7,7 +7,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-md shadow p-3 mb-5">
+        <nav class="navbar sticky-top navbar-expand-md shadow p-3 mb-5">
             <!-- logo -->
             <a class="navbar-brand" href="./index.html">
             <img class="logo d-inline-block align-text-top" src="images/logo.png"/>
@@ -46,7 +46,7 @@
                 </li>
                 <li class="nav-item text-center">
                     <!-- ABOUT -->
-                    <a class="nav-link" href="about.html">
+                    <a class="nav-link" href="#about">
                     O NÁS
                     </a>
                 </li>
@@ -56,21 +56,24 @@
                 <li class="nav-item text-center">
                     <!-- SHOPPING-CART -->
                     <a class="nav-link" href="#cart" data-bs-toggle="offcanvas">
-                        <i class="fa-solid fa-cart-shopping"> 0</i>
+                    <i class="fa-solid fa-cart-shopping"> 2</i>
                     </a>
                 </li>
                 <li class="nav-item text-center">
                     <!-- SEARCH -->
                     <a class="nav-link" href="#search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </li>
             </ul>
         </nav>
         <!-- CAROUSEL -->
-        <div class="red"></div>
+        <div class="red" id="carousel"></div>
+        <!-- C-AIRFORCE -->
         <div class="container contcard">
-            <img class="brand-img" src="images/nike.png">
+            <div class="image-wrap">
+                <img class="brand-img" src="images/nike.png">
+            </div>
             <img class="shoe-img" src="images/airforce270.png">
             <div class="row g-lg-5 shoe-desc">
                 <div class="col-lg-7 text-center text-lg-start">
@@ -82,63 +85,251 @@
                             <img class="brand-full-img" src="images/nike-full.png">
                         </div>
                         <div class="buycard-col">
-                            <button type="button" class="btn btn-lg btn-warning">KÚPIŤ TERAZ <i class="fa-solid fa-caret-right"></i></button>
+                            <button onclick="location.href='shoe.html'" type="button" class="btn btn-lg btn-warning">KÚPIŤ TERAZ <i class="fa-solid fa-caret-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- C-AIRJORDANDIY -->
+        <div class="container contcard">
+            <div class="image-wrap">
+                <img class="brand-img" src="images/nike.png">
+            </div>
+            <img class="shoe-img flip" src="images/airjordan1midsediy.png">
+            <div class="row g-lg-5 shoe-desc">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h4 class="fw-bold lh-1 mb-0 opacity-50 shoe-code">888412325433</h4>
+                    <h1 class="display-4 fw-bold lh-1 shoe-title">AIR JORDAN 1 MID SE "DIY"</h1>
+                    <h1 class="col-lg-10 fw-bold shoe-price">69,90€</h1>
+                    <div class="buycard">
+                        <div class="buycard-col">
+                            <img class="brand-full-img" src="images/nike-full.png">
+                        </div>
+                        <div class="buycard-col">
+                            <button onclick="location.href='shoe.html'" type="button" class="btn btn-lg btn-warning">KÚPIŤ TERAZ <i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- C-KD14 -->
+        <div class="container contcard">
+            <div class="image-wrap">
+                <img class="brand-img" src="images/nike.png">
+            </div>
+            <img class="shoe-img flip" src="images/kd14breddarkred.png">
+            <div class="row g-lg-5 shoe-desc">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h4 class="fw-bold lh-1 mb-0 opacity-50 shoe-code">888412552132</h4>
+                    <h1 class="display-4 fw-bold lh-1 shoe-title">KD14 "BRED" DARKRED</h1>
+                    <h1 class="col-lg-10 fw-bold shoe-price">124,90€</h1>
+                    <div class="buycard">
+                        <div class="buycard-col">
+                            <img class="brand-full-img" src="images/nike-full.png">
+                        </div>
+                        <div class="buycard-col">
+                            <button onclick="location.href='shoe.html'" type="button" class="btn btn-lg btn-warning">KÚPIŤ TERAZ <i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- C-AIRJORDANLOW -->
+        <div class="container contcard">
+            <div class="image-wrap">
+                <img class="brand-img" src="images/nike.png">
+            </div>
+            <img class="shoe-img flip" src="images/airjordan.png">
+            <div class="row g-lg-5 shoe-desc">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h4 class="fw-bold lh-1 mb-0 opacity-50 shoe-code">888412325862</h4>
+                    <h1 class="display-4 fw-bold lh-1 shoe-title">AIR JORDAN1 LOW QUAI54</h1>
+                    <h1 class="col-lg-10 fw-bold shoe-price">119,90€</h1>
+                    <div class="buycard">
+                        <div class="buycard-col">
+                            <img class="brand-full-img" src="images/nike-full.png">
+                        </div>
+                        <div class="buycard-col">
+                            <button onclick="location.href='shoe.html'" type="button" class="btn btn-lg btn-warning">KÚPIŤ TERAZ <i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selector">
+            <!-- AIR FORCE 270 -->
+            <div class="card mb-3 card-suggest" style="max-width: 375px">
+                <div class="row g-0 suggest-border">
+                    <div class="suggest-container" style="background-color: #ef233c;">
+                        <img class="suggest-img flip" src="images/airforce270.png">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <a class="redlink" href="shoe.html">
+                                <h5 class="card-title">AIR FORCE 270</h5>
+                            </a>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="card-text cart-shoe-price">169,90€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- AIR JORDAN 1 MID SE "DIY" -->
+            <div class="card mb-3 card-suggest" style="max-width: 375px">
+                <div class="row g-0 suggest-border">
+                    <div class="suggest-container" style="background-color: #5df75d;">
+                        <img class="suggest-img" src="images/airjordan1midsediy.png">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <a class="redlink" href="shoe.html">
+                                <h5 class="card-title">AIR JORDAN 1 MID SE "DIY"</h5>
+                            </a>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="card-text cart-shoe-price">69,90€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- KD14 "BRED" DARKRED -->
+            <div class="card mb-3 card-suggest" style="max-width: 375px">
+                <div class="row g-0 suggest-border">
+                    <div class="suggest-container" style="background-color: #ef233c;">
+                        <img class="suggest-img" src="images/kd14breddarkred.png">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <a class="redlink" href="shoe.html">
+                                <h5 class="card-title">KD14 "BRED" DARKRED</h5>
+                            </a>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="card-text cart-shoe-price">124,90€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- AIR JORDAN 1 LOW QUAI 54 -->
+            <div class="card mb-3 card-suggest" style="max-width: 375px">
+                <div class="row g-0 suggest-border">
+                    <div class="suggest-container" style="background-color: #ef233c;">
+                        <img class="suggest-img" src="images/airjordan.png">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <a class="redlink" href="shoe.html">
+                                <h5 class="card-title">AIR JORDAN 1 LOW QUAI 54</h5>
+                            </a>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="card-text cart-shoe-price">119,90€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The dots/circles -->
+            <div class="carousel-paginator">
+                <span class="dot fa-regular fa-circle" onclick="slide(1)"></span>
+                <span class="dot fa-regular fa-circle" onclick="slide(2)"></span>
+                <span class="dot fa-regular fa-circle" onclick="slide(3)"></span>
+                <span class="dot fa-regular fa-circle" onclick="slide(4)"></span>
+            </div>
+        </div>
         <div class="red-2"></div>
         <div class="red-3"></div>
 
-
+        <!-- ABOUT -->
+        <div class="about" id="about">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="images/jordanstory.jpg" class="d-block mx-lg-auto img-fluid" alt="Všetko sa to začalo..." title="Všetko sa to začalo..." loading="lazy">
+                </div>
+                  <div class="col-lg-6">
+                    <img class="mb-3 about-logo" src="images/logo.png"/>
+                    <p class="lead">Našou misiou je prinášať atlétom, pouličným hráčom basketbalu, bežným tínedžerom, či <b>TEBE</b> ten najlepší zážitok z chôdze, behu, státia a sedenia.</p>
+                    <p class="lead">Už od roku 1984 robíme každodenný zážitok z fyzickej aktivity <b>POHODLNÝM</b> a <b>ŠTÝLOVÝM</b>, pretože na <b>TVOJOM</b> zdraví a radosti záleží.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button onclick="window.open('https://youtu.be/8P44D_DeJ-U')" type="button" class="btn btn-lg btn-how">AKO? <i class="fa-brands fa-youtube"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
         <!-- CART -->
         <div class="offcanvas offcanvas-end" id="cart">
             <div class="offcanvas-header">
-                <h4 class="">Tvoj nákupný košík:</h4>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h4 class="cart-title">TVOJ NÁKUPNÝ KOŠÍK: 339,80€</h4>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Zavrieť"></button>
             </div>
             <div class="offcanvas-body">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="images/airforce270.png" style="max-width: 100%">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">NIKE AIR VAPORMAX</h5>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="col-md-4 shoe-cart">
+                            <img class="shoe-cart-img" src="images/vapormax.png">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <button type="button" class="btn-close text-reset cart-remove" aria-label="Odstrániť"></button>
+                            <div class="card-body">
+                                <a class="redlink" href="shoe.html">
+                                    <h5 class="card-title">NIKE AIR VAPORMAX</h5>
+                                </a>
+                                <p class="card-text cart-shoe-price">169,90€</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="images/airforce270.png" style="max-width: 100%">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">NIKE AIR VAPORMAX</h5>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="col-md-4 shoe-cart">
+                            <img class="shoe-cart-img" src="images/vapormax.png">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <button type="button" class="btn-close text-reset cart-remove" aria-label="Odstrániť"></button>
+                            <div class="card-body">
+                                <a class="redlink" href="shoe.html">
+                                    <h5 class="card-title">NIKE AIR VAPORMAX</h5>
+                                </a>
+                                <p class="card-text cart-shoe-price">169,90€</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <nav aria-label="...">
                     <ul class="pagination justify-content-center text-center align-text-bottom">
-                      <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
+                        <li class="page-item disabled">
+                            <a class="page-link"><</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -154,6 +345,50 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
+    </script>
+    <script>
+        index = 4;
+        var slides = document.getElementsByClassName("contCard");
+        var dots = document.getElementsByClassName("dot");
+        load();
+        function load() {
+            for (var i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" fa-solid", "");
+            }
+            slides[index-1].style.display = "block";
+            dots[index-1].className += " fa-solid";
+        }
+        const interval = setInterval(next, 3000);
+        function next() {
+            if (index+1 > slides.length) {index = 1}
+            if (index+1 < 1) {index = slides.length}
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" fa-solid", "");
+            }
+            slides[index-1].style.display = "block";
+            dots[index-1].className += " fa-solid";
+            index++;
+        }
+        function slide(n) {
+            index = n;
+            if(interval) {
+                clearInterval(interval);
+            }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" fa-solid", "");
+            }
+            slides[index-1].style.display = "block";
+            dots[index-1].className += " fa-solid";
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
