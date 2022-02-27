@@ -19,17 +19,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@700&display=swap');
 
+/* body */
 body {
     background-image: url('../images/upper.png') !important;
     background-repeat: repeat-y;
     background-position: 25% 25%;
+    height: 200%;
 }
-nav {
-    background-color: white;
+
+/* glitch */
+.red {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #ef233c;
 }
-img {
-    max-width: 100%;
-    height: auto;
+.red-2 {
+    position: absolute;
+    bottom: 5%;
+    width: 250px;
+    height: 10px;
+    background-color: #ef233c;
+}
+.red-3 {
+    position: absolute;
+    bottom: 6%;
+    left: 8%;
+    width: 250px;
+    height: 20px;
+    background-color: #ef233c;
+}
+
+
+.contcard {
+    position: absolute;
+    left: 5%;
+    margin-top: 5%;
+    background-color: transparent !important;
+}
+.shoe-desc {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.shoe-cart {
+    background-color: #ef233c;
+}
+.shoe-cart-img {
+    max-width: 90%;
+    margin: 5px;
+}
+.brand-img {
+    width: calc(100% - 150px);
+    position: absolute;
+    left: 150px;
+    top: -50px;
+}
+.brand-full-img {
+    filter: brightness(0%) invert(0);
+}
+.buycard {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10%;
+}
+.buycard-col {
+    float: left;
+}
+.shoe-img {
+    width: calc(100% - 450);
+    position: absolute;
+    left: 30%;
+    top: -75px;
+}
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited, .btn-warning:focus {
+    box-shadow:none !important;
+    outline:0px !important;
+    background-color: #ef233c !important;
+    border-color:#ef233c !important;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 0;
+    font-family: "MADE TOMMY";
+}
+.navbar {
+    background-color: #FFFFFF;
+    width: 100%;
 }
 .navbar-brand {
     margin: 15px;
@@ -44,16 +119,7 @@ img {
 .nav-item {
     font-family: 'garnet';
     font-weight: bold;
-    font-size: 1.30vw;
-}
-.toolbar {
-    margin-right: 15px;
-}
-.redlink:link, .redlink:visited, .redlink>*>a:link, .redlink>*>a:visited {
-    color: #18181a !important;
-}
-.redlink:hover, .redlink>*>a:hover {
-    color: #ef233c !important;
+    font-size: 25px;
 }
 .cart-title {
     font-weight: bold;
@@ -66,56 +132,6 @@ img {
     top: 10%;
     right: 2%;
 }
-.cart-shoe {
-    background-color: #ef233c;
-}
-.cart-shoe-img {
-    max-width: 90%;
-    margin: 5px;
-}
-.cart-shoe-title {
-    font-family: 'Dela Gothic One', cursive;
-}
-.cart-shoe-price {
-    color: #ef233c;
-    font-family: 'Oswald', sans-serif;
-}
-.glitch-red {
-    position: static;
-    width: 2.6vw;
-    height: 25px;
-    background-color: #ef233c;
-}
-.glitch-red-2 {
-    position: relative;
-    margin-top: 5%;
-    left: 8%;
-    width: 13.137vw;
-    height: 20px;
-    background-color: #ef233c;
-}
-.glitch-red-3 {
-    position: relative;
-    width: 13.137vw;
-    height: 10px;
-    background-color: #ef233c;
-}
-.brand-img {
-    position: absolute !important;
-    margin-left: 12.5vw;
-    max-width: 85vw !important;
-}
-.shoe-img {
-    position: absolute !important;
-    margin-left: 25.5vw;
-    max-width: 74.5vw !important;
-}
-.carousel-shoe-card * {
-    position: relative;
-}
-.shoe-desc {
-    margin-left: 5.5vw;
-}
 .shoe-code {
     font-family: fot-rodin-pron,sans-serif;
     font-weight: 300;
@@ -126,64 +142,65 @@ img {
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-family: 'Dela Gothic One', cursive;
     letter-spacing: 15px;
-    width: 37.5vw;
 }
-.shoe-desc {
-    padding-top: 4%;
+.card-title {
+    font-family: 'Dela Gothic One', cursive;
 }
 .shoe-price {
-    padding-top: 10%;
+    margin-top: 10%;
     color: #ef233c;
     font-family: 'Oswald', sans-serif;
 }
-.brand-full-img {
-    filter: brightness(0%) invert(0);
+.cart-shoe-price {
+    color: #ef233c;
+    font-family: 'Oswald', sans-serif;
 }
-.buycard {
-    display:inline-block;
-    margin-top: 10%;
+.nav-item>a:link, .nav-item>a:visited {
+    color: #18181a !important;
 }
-.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited, .btn-warning:focus {
-    box-shadow:none !important;
-    outline:0px !important;
-    background-color: #ef233c !important;
-    border-color:#ef233c !important;
-    font-family: "MADE TOMMY";
-    vertical-align: bottom;
-    margin-left: 25px;
+.nav-item>a:hover {
+    color: #ef233c !important;
 }
-.flip {
-    transform: scaleX(-1);
+.redlink:link, .redlink:visited {
+    color: #18181a !important;
+}
+.redlink:hover {
+    color: #ef233c !important;
+}
+.toolbar {
+    margin-right: 15px;
+}
+.nav-link {
+    display: inline !important;
 }
 .selector {
-    margin-top: -55vh;
+    margin-top: 2%;
     position: absolute;
     right: 0;
 }
-.card {
+.card-suggest {
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
     border: none !important;
-    max-width: 375px;
 }
-.selector-img {
+.suggest-img {
     margin: 5px;
     max-width: 150px;
     height: 126.86px;
 }
-.selector-img-container {
+.suggest-container {
     width: 150px;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
 }
-.selector-card {
+.suggest-border {
     border: 1px solid rgba(0,0,0,.125);
     border-left: none;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
 }
-.card-title {
-    font-family: 'Dela Gothic One', cursive;
+.flip {
+    transform: scaleX(-1);
 }
 .dot {
     cursor: pointer;
@@ -198,10 +215,10 @@ img {
     display: block;
 }
 .about {
-    margin-top: 5%;
-}
-.about-logo {
-    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 95%;
 }
 .btn-how, .btn-how:hover, .btn-how:active, .btn-how:focus, .btn-how:visited {
     box-shadow:none !important;
@@ -209,4 +226,7 @@ img {
     background-color: #ef233c !important;
     border-color:#ef233c !important;
     font-family: "MADE TOMMY";
+}
+.about-logo {
+    width: 100%;
 }
