@@ -63,7 +63,7 @@
                 </li>
                 <li class="nav-item">
                     <!-- SEARCH -->
-                    <a class="nav-link" href="#search">
+                    <a class="nav-link" href="#search" onclick="openSearch();return false;">
                         <i class="fa-solid fa-magnifying-glass" title="HĽADAŤ"></i>
                     </a>
                 </li>
@@ -158,7 +158,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
-                            <a class="redlink" href="shoe.html">
+                            <a class="redlink" href="shoe.html" target="_blank">
                                 <h5 class="card-title">AIR FORCE 270</h5>
                             </a>
                             <div class="rating">
@@ -181,7 +181,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
-                            <a class="redlink" href="shoe.html">
+                            <a class="redlink" href="shoe.html" target="_blank">
                                 <h5 class="card-title">AIR JORDAN 1 MID SE "DIY"</h5>
                             </a>
                             <div class="rating">
@@ -204,7 +204,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
-                            <a class="redlink" href="shoe.html">
+                            <a class="redlink" href="shoe.html" target="_blank">
                                 <h5 class="card-title">KD14 "BRED" DARKRED</h5>
                             </a>
                             <div class="rating">
@@ -227,7 +227,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="card-body">
-                            <a class="redlink" href="shoe.html">
+                            <a class="redlink" href="shoe.html" target="_blank">
                                 <h5 class="card-title">AIR JORDAN 1 LOW QUAI 54</h5>
                             </a>
                             <div class="rating">
@@ -289,6 +289,101 @@
                       </div>
                 </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="text-center shadow text-muted">
+            <!-- Section: Links  -->
+            <section class="p-1">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+                            <!-- Content -->
+                            <img class="logo d-inline-block align-text-top mb-3" src="images/logo.png" title="STREETWEAR"/>
+                            <p>
+                                Našou misiou je prinášať atlétom, pouličným hráčom basketbalu, bežným tínedžerom, či TEBE ten najlepší zážitok z chôdze, behu, státia a sedenia.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Table of contents
+                            </h6>
+                            <p>
+                                <a href="#" class="text-reset">Kategórie</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset">Terms of Service</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Kategórie
+                            </h6>
+                            <p>
+                                <a href="#" class="text-reset" target="_blank">STREET</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset" target="_blank">HI-TOP</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset" target="_blank">BASKETBALL</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset" target="_blank">FOOTBALL</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset" target="_blank">SKATEBOARDING</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Kontakt
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i><a class="text-reset" href="https://goo.gl/maps/GhpXMvPigrKSRPzU6" target="_blank">Nemocniční 6, 190 00 Praha 9, Česká republika</a></p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                support@streetwear.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i>+420 944 013 013</p>
+                            <p><i class="fas fa-phone me-3"></i>+421 944 013 013</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © STREETWARE EST. 2019 - 2022 •
+                <a class="text-reset fw-bold" href="../../">benjaminmorozov@gmail.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+        <!-- SEARCH -->
+        <div id="search" class="search">
+            <span class="closebtn" onclick="closeSearch()" title="Zavrieť vyhľadávanie">×</span>
+            <div class="search-content">
+              <form>
+                <input type="text" placeholder="NIKE AIR JORDAN..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
             </div>
         </div>
 
@@ -401,6 +496,14 @@
             }
             slides[index-1].style.display = "block";
             dots[index-1].className += " fa-solid";
+        }
+
+        function openSearch() {
+            document.getElementById("search").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("search").style.display = "none";
         }
     </script>
 </html>
