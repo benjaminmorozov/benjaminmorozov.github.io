@@ -229,35 +229,30 @@ img {
     text-align: center;
     margin-top: 30px;
     margin: auto;
-  }
-  
-  .search .closebtn {
+}
+.search .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
     cursor: pointer;
     color: white;
-  }
-  
-  .search .closebtn:hover {
+}
+.search .closebtn:hover {
     color: #ccc;
-  }
-  
-  .search input[type=text] {
+}
+.search input[type=text] {
     padding: 15px;
     font-size: 17px;
     border: none;
     float: left;
     width: 80%;
     background: white;
-  }
-  
-  .search input[type=text]:hover {
+}
+.search input[type=text]:hover {
     background: #f1f1f1;
-  }
-  
-  .search button {
+}
+.search button {
     float: left;
     width: 20%;
     padding: 15px;
@@ -265,8 +260,14 @@ img {
     font-size: 17px;
     border: none;
     cursor: pointer;
-  }
-  
-  .search button:hover {
+}
+.search button:hover {
     background: #bbb;
-  }
+}
+.tosbody {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.breadcrumb {
+    padding-bottom: 2rem;
+}
