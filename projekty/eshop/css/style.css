@@ -16,8 +16,15 @@
         url("../fonts/madetommy.woff2") format("woff2"),
         url("../fonts/madetommy.woff") format("woff");
 }
+@font-face {
+    font-family: "Oswald";
+    font-weight: 700;
+    src:
+        url("../fonts/oswald.ttf") format("truetype"),
+        url("../fonts/oswald.woff2") format("woff2"),
+        url("../fonts/oswald.woff") format("woff");
+}
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@700&display=swap');
 
 body {
     background-image: url('../images/upper.png') !important;
