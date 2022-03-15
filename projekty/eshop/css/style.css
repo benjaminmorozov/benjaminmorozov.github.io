@@ -278,3 +278,47 @@ img {
 .breadcrumb {
     padding-bottom: 2rem;
 }
+.jumbo-desc {
+    font-size: 1vw;
+}
+.item-container {
+    max-width: 80% !important;
+}
+.item {
+    position: relative;
+}
+.item-img {
+    opacity: 1;
+    position: relative;
+}
+.item-title {
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 7px;
+    font-size: 1.5vw;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    color: black;
+    box-shadow:none !important;
+    outline:0px !important;
+    background-color: #ef233c !important;
+    border-color:#ef233c !important;
+    font-family: "MADE TOMMY";
+    vertical-align: bottom;
+}
+.item-button {
+    border-radius: 0 !important;
+    display: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+}
+.item:hover > .item-img > .item-button {
+    display: inline-block;
+}
+.item:hover > .item-img > img {
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 0.7;
+}
