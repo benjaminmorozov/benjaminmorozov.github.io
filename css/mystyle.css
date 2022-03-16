@@ -49,7 +49,6 @@ img {
 .button {
     width: 17%;
 }
-
 #test {
     width: 30px;
     height: 30px;
@@ -70,8 +69,16 @@ img {
         -webkit-transform: rotate(360deg);
     }
 }
-
 .bg-light {
     --bs-bg-opacity: 0;
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+.footer {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    bottom: 0;
+}
+.footer-text {
+    padding: 5px;
 }
