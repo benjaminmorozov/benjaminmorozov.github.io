@@ -24,7 +24,7 @@ body {
 .alert {
     display: inline-block
 }
-img {
+.height {
     object-fit:scale-down;
     height: 250px;
 }
