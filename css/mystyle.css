@@ -36,7 +36,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 100%;
 }
 .center-child {
     position: relative;
@@ -44,10 +44,7 @@ body {
     transform: translate(-50%);
 }
 .searchbox {
-    width: 82%;
-}
-.button {
-    width: 17%;
+    width: 35%;
 }
 #test {
     width: 30px;

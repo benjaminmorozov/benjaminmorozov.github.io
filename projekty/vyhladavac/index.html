@@ -21,9 +21,10 @@
         <div class="center">
             <h1 style="text-align: center">HELIKOPTER-SEARCH <a href="helikopter.html">🚁</a><sup>TM</sup></h1>
             <form action="https://www.helis.com/database/search">
-                <div class="center-child">
-                    <input class="searchbox" type="text" id="cont" name="s" placeholder="Nájsť model helikoptéry...">
-                    <input class="button" type="submit" value="HĽADAŤ"></input>
+                <div class="center-child text-center">
+                    <input class="searchbox" type="text" id="cont" name="s" placeholder="Nájsť typ helikoptéry...">
+                    <input type="submit" value="HĽADAŤ"></input>
+                    <input type="button" onclick="random()" value="SKÚSIŤ ŠŤASTIE"></input>
                 </div>
             </form>
         </div>
@@ -31,4 +32,9 @@
             <h4 class="footer-text">HELIKOPTÉRA DŇA: <a href="https://en.wikipedia.org/wiki/Fairey_FB-1_Gyrodyne">Fairey FB-1 Gyrodyne <img src="https://www.helis.com/pics/band/uk.gif"></a></h4>
         </div>
     </body>
+    <script>
+        function random() {
+            location.href='https://www.helis.com/database/model/' + Math.floor(Math.random()*(1646-1)+1);
+        }
+    </script>
 </html>
