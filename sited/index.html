@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <title>Theme Design</title>
+</head>
+
+<body>
+    <!-- header and navbar -->
+    <div class="header-navbar">
+        <div class="navbar">
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+            <ul class="nav-base">
+                <li><a href="" class="disabled">About us</a></li>
+                <li><a href="">Reviews</a></li>
+                <li class="wrapcollapse">
+                    <a href="" class="collapse">Portfolio</a>
+                    <ul class="onhover">
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">Print</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+            <ul class="nav-toolbar">
+                <li class="svg-item">
+                    <a href="#" onClick="toggleDarkMode()"><img class="btnsvg" src="img/dark.svg"></a>
+                </li>
+                <li class="svg-item">
+                    <a href="#" onClick="toggleColorMenu()"><img class="btnsvg" src="img/color.svg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <div class="content">
+                <badge class="bdg-primary">kitchen</badge>
+                <badge class="bdg-secondary">fashion</badge>
+                <badge class="bdg-info">design</badge>
+                <badge class="bdg-alert">living</badge>
+                <h1>
+                    <div class="highlight"></div>Lorem ipsum
+                </h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus animi voluptates dicta perferendis
+                    laboriosam dolore! Vel, inventore explicabo esse quasi rem, delectus iure minus repellat facere
+                    ratione a? Nostrum, alias.</h2>
+            </div>
+            <div class="kitchenimg">
+                <img src="img/kitchen-2165756_1920.jpg" alt="">
+            </div>
+        </div>
+        <div id="color-menu">
+            <h1>Theme engine</h1>
+            <h4>--block-color</h4>
+            <div class="colorselec">
+                <input type="color" value="#ff0000">
+                <p>aaa</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner pre akciu -->
+    <div class="sale">
+        <div class="background">
+            <div class="backwrap">
+                <h1>AKCIA</h1>
+                <h2>Doprava a montáž ZADARMO!</h2>
+                <p>Teraz k vašej objednávke nemusíte počítať s nákladmi na montáž a dopravu.
+                    Postaráme sa o to.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio">
+        <div class="topsection">
+            <h1>This is our portfolio</h1>
+        </div>
+        <div class="flexcontainer">
+            <div class="text">
+                <h3>Lorem <strong>ipsum dolor sit</strong> <i>amet, consectetur adipiscing elit</i>, <del>sed do eiusmod
+                        tempor incididunt ut</del> labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</h3>
+                <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <h3>Sed ut perspiciatis unde omnis iste natus
+                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+                <button type="button" class="btn btn-info">Display more</button>
+                <button type="button" class="btn btn-alert btn-spacing">Play video</button>
+            </div>
+            <div class="carousel">
+                <img class="slide" src="img/k1.jpg">
+                <img class="slide" src="img/k2.jpg">
+                <img class="slide" src="img/k3.jpg">
+                <div class="paginator">
+                    <button class="pagibtn btn btn-secondary" onclick="slide(-1)">❮ Prev</button>
+                    <button class="pagibtn btn btn-secondary" onclick="slide(1)">Next ❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- recenzie -->
+    <div class="reviews">
+        <div class="topsection">
+            <h1>What our customers think...</h1>
+            <button type="button" class="btn btn-primary review-btn">Display more</button>
+        </div>
+        <div class="midsection">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</h3>
+        </div>
+        <div class="botsection">
+            <div class="block unveil">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam."</p>
+            </div>
+            <div class="block">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet."</p>
+            </div>
+            <div class="block">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet."</p>
+            </div>
+            <div class="block">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet."</p>
+            </div>
+            <div class="block">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet."</p>
+            </div>
+            <div class="block">
+                <div class="avatar"></div>
+                <h1>Janka Hrušková</h1>
+                <p>,,Lorem ipsum dolor sit amet."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- kontakty -->
+    <div class="wrapper">
+        <div class="topsection">
+            <h1>Contact us</h1>
+        </div>
+        <div class="midsection">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</h3>
+        </div>
+        <div class="contact">
+            <div class="form">
+                <div class="inner-form">
+                    <form class="formelement">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input id="email" name="radio" type="radio" checked>
+                        <label for="email">Email</label>
+                        <input id="phone" name="radio" type="radio">
+                        <label for="phone">Phone</label>
+                        <select>
+                            <option>Lorem</option>
+                            <option>Ipsum</option>
+                            <option>Dolor</option>
+                            <option>Sit</option>
+                        </select>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox">
+                            <label for="checkbox">I agree with the <a href="#">terms and conditions</a>.</label><br>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1klbwhJEwXwKKStmqgTNU9NYVmuK5A5Wl&ehbc=2E312F"
+                    width="100%" height="600px" frameborder="0" style="border:0; margin-top: -150px;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footerwrap">
+        <footer>
+            <div>
+                <h2><del>Primary Kitchen</del></h2>
+                <a href="#"><img class="logo" src="img/logo.png"></a>
+            </div>
+            <div>
+                <h2>Sitemap</h2>
+                <ul class="footer-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="privacypolicy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <form action="index.html">
+                    <input type="email" placeholder="Email">
+                    <button type="button" class="btn btn-primary nwsltr-btn">Submit</button>
+                </form>
+            </div>
+            <div>
+                <h2>Contact us</h2>
+                <ul class="footer-list">
+                    <li><a href="mailto:email@index.html">By email: email@index.html</a></li>
+                    <li>
+                        <p>By number: +421 000 000 000</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <p>Copyright © 2022, all rights reserved, @benjaminmorozov, @petergonda, @ninahlavacova</p>
+        </div>
+    </div>
+    <script src="js/darkmode.js"></script>
+</body>
+
+</html>
