@@ -1,5 +1,4 @@
-A repo for a Github Pages project for school. (2022)
-\- Includes a template for an e-shop and a working search engine.\
+A repo for a Github Pages project for school. (2022) - Includes a template for an e-shop and a working search engine.\
 \
  📦benjaminmorozov.github.io\
  ┣ 📂projekty\
