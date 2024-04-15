@@ -312,3 +312,6 @@ pre {
 .margintop {
     margin-top: 3vh !important;
 }
+p {
+    font-size: 1.15em;
+}
