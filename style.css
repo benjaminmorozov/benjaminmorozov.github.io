@@ -12,10 +12,13 @@ body {
     background-color: #272727 !important;
     color: #f8ebc1 !important;
 }
+.separator {
+    margin-right: 8vw;
+}
 .separator * {
     margin-left: 0.5vw !important;
     font-family: fot-rodin-pron,sans-serif;
-    font-size: 1vw;
+    font-size: 1.5rem;
     display: inline;
 }
 .separator * + * {
@@ -137,7 +140,7 @@ h2 {
     padding: 2vw;
     list-style: none;
     text-align: left;
-    max-width: 40%;
+    max-width: 50vw;
 }
 
 @media (max-width: 767px) {
@@ -228,7 +231,7 @@ h2 {
     right: -55.8px;
 }
 
-.footer {
+footer {
     position: absolute;
     bottom: 0;
     text-align: left;
