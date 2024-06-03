@@ -14,6 +14,8 @@ body {
 }
 .separator {
     margin-right: 8vw;
+    display: flex;
+    justify-content: space-between;
 }
 .separator * {
     margin-left: 0.5vw !important;
@@ -27,7 +29,6 @@ body {
 .paginator {
     position: absolute;
     right: 1vw;
-    top: 10.75%;
 }
 .mini-paginator {
     position: absolute;
@@ -317,4 +318,20 @@ pre {
 }
 p {
     font-size: 1.15em;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #727cf5;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.hero img {
+    width: 256px;
 }
