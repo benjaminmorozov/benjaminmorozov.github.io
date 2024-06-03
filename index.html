@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webové fonty - Benjamín Morozov II.A</title>
+    <title>Benjamín Morozov</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
@@ -16,9 +16,11 @@
         <h1 class="title">Benjamín Morozov <i class="fa-solid fa-compact-disc fa-spin" style="--fa-animation-duration: 10s;"></i></h1>
     </header>
     <div class="separator">
-        <h3><i class="fa-solid fa-at"></i> benjaminmorozov@gmail.com</h3>
-        <h3><i class="fa-solid fa-graduation-cap"></i> SSOSTA</h3>
-        <h3><i class="fa-solid fa-toolbox"></i> C#, C++, Python, JavaScript</h3>
+        <div class="info">
+            <h3><i class="fa-solid fa-at"></i> benjaminmorozov@gmail.com</h3>
+            <h3><i class="fa-solid fa-graduation-cap"></i> SSOSTA</h3>
+            <h3><i class="fa-solid fa-toolbox"></i> C#, C++, Python, JavaScript</h3>
+        </div>
         <div class="paginator">
             <button class="btn btn-warning back" onclick="slide(-1)"><</button>
             <button class="btn btn-warning forward" onclick="slide(1)">></button>
@@ -30,25 +32,31 @@
     <div class="page">
         <h2># niečo o mne</h2>
         <div class="content">
-            <p>Narodil som sa <strong>dvadsiateho augusta dvetisícpäť</strong> v <strong>Starej Ľubovni</strong> a pochádzam zo <strong>Spišskej Belej</strong>, kde som chodil aj na základnú školu. Momentálne maturujem na <strong>súkromnej strednej odbornej škole Tatranská akadémia</strong>, na odbore inteligentné technológie. Uchádzam sa o štúdium na Žilinskej univerzite v Žiline.</p>
-            <p>Medzi moje záľuby patrí grafický dizajn, programovanie, hudba ale i hranie videohier s kamarátmi, či rozoberanie počítačov a zprovozňovanie starej elektrotechniky (iPad, iPod, notebooky, konzoly).</p>
-            <div class="tml margintop">
-                <ul class="timeline">
-                    <li class="event" data-date="možno">
-                        <h3>Žilinská univerzita v Žiline</h3>
-                        <p>Fakulta riadenia a informatiky - Informačné a sieťové technológie</p>
-                     </li>
-                    <li class="event" data-date="2020-2024">
-                        <h3>Súkromná stredná odborná škola, Ul. 29. augusta 4812, 058 01 Poprad</h3>
-                        <p>2559 M Inteligentné technológie</p>
-                     </li>
-                    <li class="event" data-date="2011-2020">
-                        <h3>Základná škola M.R. Štefánika, Štefánikova 19, 059 01 Spišská Belá</h3>
-                    </li>
-                </ul>
+            <p>Moje meno je Benjamín Morozov, inak aj <strong>Benji</strong>. Narodil som sa <strong title="18 rokov">dvadsiateho augusta dvetisícpäť</strong> v Starej Ľubovni a pochádzam zo Spišskej Belej, kam som chodil aj na základnú školu. Vyštudoval a zmaturoval som na súkromnej strednej odbornej škole Tatranská akadémia na odbore <strong>inteligentné technológie</strong>.</p>
+            <p>V súčasnosti študujem na <strong>Žilinskej univerzite v Žiline</strong>, Fakulta riadenia a informatiky, študijný program Informačné a sieťové technológie.</p>
+            <div class="hero">
+                <div class="portrait">
+                    <img src="img/Z61_2648-2.jpg">
+                </div>
+                <div class="tml">
+                    <ul class="timeline">
+                        <li class="event" data-date="2024-XXXX">
+                            <h3>Žilinská univerzita v Žiline</h3>
+                            <p>Fakulta riadenia a informatiky - Informačné a sieťové technológie</p>
+                         </li>
+                        <li class="event" data-date="2020-2024">
+                            <h3>Súkromná stredná odborná škola, Ul. 29. augusta 4812, 058 01 Poprad</h3>
+                            <p>2559 M Inteligentné technológie</p>
+                         </li>
+                        <li class="event" data-date="2011-2020">
+                            <h3>Základná škola M.R. Štefánika, Štefánikova 19, 059 01 Spišská Belá</h3>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <p>Medzi moje záľuby patrí <strong>grafický dizajn</strong>, programovanie, hudba ale i hranie videohier, či rozoberanie počítačov a zprovozňovanie starej elektroniky.</p>
+            <p>Zaujímam sa aj o prácu s vývojovými <strong>mikrokontrolérovými doskami</strong>, ako napríklad <strong>ESP32</strong>. Práve tú som využil vo svojej <strong>maturitnej práci</strong>, <a href="http://github.com/benjaminmorozov/deskhelper">deskhelper</a>, zariadenie, ktoré slúži na uľahčenie kancelárskej práce <strong>grafickým zobrazením</strong> najčastejšie používaných aplikácií (<strong>hudobný prehrávač Spotify</strong>, kalendár, čas). Aplikácie možno ovládať použitím vstavaných tlačidiel, pričom zariadenie možno rozšíriť o <strong>vlastnú aplikáciu</strong>, ktorá využíva vstavané vstupnovýstupné PINy.</p>
             <p class="margintop">Medzi moje schopnosti patrí znalosť jazykov C# (a .NET Framework), C++, Python, PHP, HTML, CSS, MySQL a JavaScript.</p>
-            <p>Pracujem aj na certifikáte FCE.</p>
         </div>
     </div>
 
@@ -56,6 +64,7 @@
         <h2># portfólio</h2>
         <div class="content">
             <p>Toto je moje grafické aj negrafické portfólio.</p>
+            <p><a href="https://github.com/benjaminmorozov">github</a></p>
         </div>
     </div>
 
@@ -63,6 +72,7 @@
         <h2># stiahnutie</h2>
         <div class="content">
             <p>Tu sú nejaké súbory na stiahnutie.</p>
+            <p><a href="downloads/DeskSwitch.exe">DeskSwitch.exe</a></p>
         </div>
     </div>
 
@@ -74,9 +84,9 @@
     </div>
 
     <div class="page text-center">
-        <h1>Thanks for paying attention</h1>
+        <h1>Ďakujem za pozornosť</h1>
         <p>Happy javascript coding!</p>
-        <button id="unwind" class="btn btn-outline-warning" onclick="openPage()">¶ unroll the page</button>
+        <button id="unwind" class="btn btn-outline-warning" onclick="openPage()">¶ rozvinúť stránku</button>
     </div>
     <footer>
         <p class="sources">sources</p>
@@ -84,10 +94,11 @@
 </body>
 <script>
 var sources = {
-    0:"zdroj: ja",
+    0:"Naposledy upravené: 03.06.2024 [DD.MM.YYYY]",
     1:"",
     2:"",
-    3:""
+    3:"",
+    4:""
 }
 index = 0;
 var slides = document.getElementsByClassName("page");
@@ -141,6 +152,7 @@ function openPage() {
         slides[i].style.display = "block";
     }
     document.getElementById("unwind").setAttribute("onclick", "closePage()");
+    document.getElementById("unwind").textContent = "¶ zvinúť stránku";
 }
 function closePage() {
     for (var i = 0; i < slides.length; i++) {
@@ -148,6 +160,7 @@ function closePage() {
     }
     slides[index].style.display = "block";
     document.getElementById("unwind").setAttribute("onclick", "openPage()");
+    document.getElementById("unwind").textContent = "¶ rozvinúť stránku";
 }
 </script>
 <script src="https://kit.fontawesome.com/34a3fa1806.js" crossorigin="anonymous"></script>
