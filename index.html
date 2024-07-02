@@ -11,6 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="scripts/github.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+    $("#github-projects").loadRepositories("benjaminmorozov");
+  });
+</script>-->
 <body>
     <header>
         <h1 class="title">Benjamín Morozov <i class="fa-solid fa-compact-disc fa-spin" style="--fa-animation-duration: 10s;"></i></h1>
@@ -18,7 +25,7 @@
     <div class="separator">
         <div class="info">
             <h3><i class="fa-solid fa-at"></i> benjaminmorozov@gmail.com</h3>
-            <h3><i class="fa-solid fa-graduation-cap"></i> SSOSTA</h3>
+            <h3><i class="fa-solid fa-graduation-cap"></i> UNIZA</h3>
             <h3><i class="fa-solid fa-toolbox"></i> C#, C++, Python, JavaScript</h3>
         </div>
         <div class="paginator">
@@ -29,10 +36,13 @@
 
     <hr class="dashed">
 
+    <div class="decider">
+        <h2 class="header"># title</h2>
+        <h2 class="headernext"># title</h2>
+    </div>
     <div class="page">
-        <h2># niečo o mne</h2>
         <div class="content">
-            <p>Moje meno je Benjamín Morozov, inak aj <strong>Benji</strong>. Narodil som sa <strong title="18 rokov">dvadsiateho augusta dvetisícpäť</strong> v Starej Ľubovni a pochádzam zo Spišskej Belej, kam som chodil aj na základnú školu. Vyštudoval a zmaturoval som na súkromnej strednej odbornej škole Tatranská akadémia na odbore <strong>inteligentné technológie</strong>.</p>
+            <p>Moje meno je Benjamín Morozov, volaj ma <strong>Benji</strong>. Narodil som sa <strong title="18 rokov">dvadsiateho augusta dvetisícpäť</strong> v Starej Ľubovni a pochádzam zo Spišskej Belej, kam som chodil aj na základnú školu. Vyštudoval a zmaturoval som na súkromnej strednej odbornej škole Tatranská akadémia na odbore <strong>inteligentné technológie</strong>.</p>
             <p>V súčasnosti študujem na <strong>Žilinskej univerzite v Žiline</strong>, Fakulta riadenia a informatiky, študijný program Informačné a sieťové technológie.</p>
             <div class="hero">
                 <div class="portrait">
@@ -61,25 +71,50 @@
     </div>
 
     <div class="page">
-        <h2># portfólio</h2>
         <div class="content">
             <p>Toto je moje grafické aj negrafické portfólio.</p>
-            <p><a href="https://github.com/benjaminmorozov">github</a></p>
+            <p><a href="old/html/subpage.html">grafické portfólio</a></p>
+            <div id="github-projects">
+                <dl>
+                    <dt><a href="https://github.com/benjaminmorozov/antiafkfix">antiafkfix</a></dt>
+                        <dd>fortnite, csgo, roblox afk bot</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/Arduino-libraries">Arduino-libraries</a></dt>
+                        <dd>Arduino DHT11 library forked from xl2pfu</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/benjaminmorozov.github.io">benjaminmorozov.github.io</a></dt>
+                        <dd>My personal Github Pages site. Uses a custom css framework and javascript trick-hackery.</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/BlockTheSpot-banner-fix">BlockTheSpot-banner-fix</a></dt>
+                        <dd>A fixed version of the latest BlockTheSpot installer. Removes the ad banner.</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/deskhelper">deskhelper</a></dt>
+                        <dd>esp32-s3+lcd+2button multifunctional combo</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/esp32dht11">esp32dht11</a></dt>
+                        <dd>html and cpp code to interface with a dht11 using an esp32 and send it to a webserver using Blynk</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/freibus">freibus</a></dt>
+                        <dd>freibus web repo</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/haluskar-bot">haluskar-bot</a></dt>
+                        <dd>an advanced discord bot written in C# (using DiscordNET)</dd>
+                    <dt>❤️ <a href="https://github.com/benjaminmorozov/probook450g7">probook450g7</a></dt>
+                        <dd>Mostly just ThrottleStop configs for HP Probook 450 G7 (Intel i5-10210U) but some interesting discoveries I made too</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/SCHOOL-DDM-ODP">SCHOOL-DDM-ODP</a></dt>
+                        <dd>js, md and html school projects</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/SCHOOL-DTS">SCHOOL-DTS</a></dt>
+                        <dd>SQL school assignment</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/SCHOOL-PIT">SCHOOL-PIT</a></dt>
+                        <dd>school assignment in C</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/wenbreak">wenbreak</a></dt>
+                        <dd>abandoned cz/sk csgo jailbreak server</dd>
+                    <dt><a href="https://github.com/benjaminmorozov/wocabee-hacktool">wocabee-hacktool</a></dt>
+                        <dd>selenium autofill</dd>
+                </dl>
+            </div>
         </div>
     </div>
 
     <div class="page">
-        <h2># stiahnutie</h2>
         <div class="content">
-            <p>Tu sú nejaké súbory na stiahnutie.</p>
+            <p>Tu sú projekty, ktoré možno stiahnúť:</p>
             <p><a href="downloads/DeskSwitch.exe">DeskSwitch.exe</a></p>
-        </div>
-    </div>
-
-    <div class="page">
-        <h2># kontakt</h2>
-        <div class="content">
-            <p>Kontaktovať ma možno emailom: <a href="mailto:benjaminmorozov@gmail.com">benjaminmorozov@gmail.com</a>.</p>
+            <p><a href="downloads/ThrottleStop.ini">ThrottleStop.ini</a></p>
+            <p><a href="downloads/ThrottleStopSchool.ini">ThrottleStopSchool.ini</a></p>
         </div>
     </div>
 
@@ -88,20 +123,27 @@
         <p>Happy javascript coding!</p>
         <button id="unwind" class="btn btn-outline-warning" onclick="openPage()">¶ rozvinúť stránku</button>
     </div>
-    <footer>
-        <p class="sources">sources</p>
-    </footer>
 </body>
+<footer>
+    <p class="sources">sources</p>
+</footer>
 <script>
+var headers = {
+    0:"# niečo o mne",
+    1:"# portfólio",
+    2:"# stiahnutie",
+    3:""
+}
 var sources = {
-    0:"Naposledy upravené: 03.06.2024 [DD.MM.YYYY]",
+    0:"Naposledy upravené: 02/07/2024 16:29",
     1:"",
     2:"",
-    3:"",
-    4:""
+    3:""
 }
 index = 0;
 var slides = document.getElementsByClassName("page");
+var header = document.getElementsByClassName("header")[0];
+var headernext = document.getElementsByClassName("headernext")[0];
 var footer = document.getElementsByClassName("sources")[0];
 load();
 function load() {
@@ -110,7 +152,12 @@ function load() {
     }
     slides[index].style.display = "block";
     footer.innerHTML = sources[index];
-    checkForPaginator();
+    header.innerHTML = headers[index];
+    if(checkForPaginator()) {
+        headernext.innerHTML = headers[index+1];
+    } else {
+        headernext.innerHTML = "";
+    }
 }
 function slide(n) {
     if ((slides.length-1 < (index+n)) || (index+n < 0)) {
@@ -125,18 +172,26 @@ function slide(n) {
     }
     slides[index].style.display = "block";
     footer.innerHTML = sources[index];
-    checkForPaginator();
+    header.innerHTML = headers[index];
+    if(checkForPaginator()) {
+        headernext.innerHTML = headers[index+1];
+    } else {
+        headernext.innerHTML = "";
+    }
 }
 function checkForPaginator() {
     if (index == 0) {
         document.getElementsByClassName("back")[0].setAttribute('disabled','');
         document.getElementsByClassName("forward")[0].removeAttribute("disabled");
+        return true;
     } else if (index == slides.length-1) {
         document.getElementsByClassName("back")[0].removeAttribute("disabled");
         document.getElementsByClassName("forward")[0].setAttribute('disabled','');
+        return false;
     } else {
         document.getElementsByClassName("back")[0].removeAttribute("disabled");
         document.getElementsByClassName("forward")[0].removeAttribute("disabled");
+        return true;
     }
 }
 (function(d) {

@@ -11,6 +11,7 @@ body {
     margin: 1vw !important;
     background-color: #272727 !important;
     color: #f8ebc1 !important;
+    position: relative;
 }
 .separator {
     margin-right: 8vw;
@@ -232,11 +233,20 @@ h2 {
     right: -55.8px;
 }
 
+/* footer magic */
+body::after {
+    content: '';
+    display: block;
+    height: 25px; /* add 25px pseudospace */
+}
+
 footer {
     position: absolute;
     bottom: 0;
-    text-align: left;
+    width: 100%;
+    height: 25px; /* use the pseudospace */
 }
+
 pre {
     width: max-content;
 }
@@ -334,4 +344,12 @@ a:link, a:visited, a:hover, a:active {
 }
 .hero img {
     width: 256px;
+}
+
+.decider {
+    display: flex;
+    justify-content: space-between;
+}
+.headernext {
+    color: #6c695e !important;
 }
